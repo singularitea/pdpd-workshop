@@ -45,6 +45,6 @@ html_index = create_table(html_string)
 #path = 'C:/Users/Ben.Scott/Dropbox/Programming/Python/pdpd/week03/'
 path = os.path.dirname(os.path.abspath(__file__))
 # create a index.html document and write our string of HTML to it
-file = open(path +'\index.html', 'w')
+file = open(os.path.join(path, 'index.html'), 'w')
 file.write(html_index)
 file.close()
